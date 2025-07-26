@@ -6,7 +6,7 @@ _Executable implementation tasks for core foundation systems_
 
 ### Phase 1: Core Managers Setup
 
-- [ ] 1. Create GameManager singleton
+- [x] 1. Create GameManager singleton
   - Create `scripts/managers/game_manager.gd` as autoload singleton
   - Implement initialization system for all core managers
   - Add signal definitions for game-wide events
@@ -14,7 +14,7 @@ _Executable implementation tasks for core foundation systems_
   - _Leverage: project.godot autoload configuration_
   - _Requirements: 1.1, 1.2_
 
-- [ ] 2. Implement basic SceneManager
+- [x] 2. Implement basic SceneManager
   - Create `scripts/managers/scene_manager.gd` as singleton
   - Add scene transition functionality with fade effects
   - Implement scene preloading for performance
@@ -22,7 +22,7 @@ _Executable implementation tasks for core foundation systems_
   - _Leverage: main_menu.gd scene structure patterns_
   - _Requirements: 2.1, 2.2, 2.3, 2.4_
 
-- [ ] 3. Set up DataManager foundation
+- [x] 3. Set up DataManager foundation
   - Create `scripts/managers/data_manager.gd` as singleton
   - Implement file I/O operations using Godot's FileAccess
   - Add JSON serialization for player data
