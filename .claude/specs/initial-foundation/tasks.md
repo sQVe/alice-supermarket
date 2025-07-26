@@ -32,7 +32,7 @@ _Executable implementation tasks for core foundation systems_
 
 ### Phase 2: Data Models and Profile System
 
-- [ ] 4. Create PlayerProfile data model
+- [x] 4. Create PlayerProfile data model
   - Create `scripts/data/player_profile.gd` as Resource class
   - Define player data structure with export variables
   - Add profile validation and defaults
@@ -40,7 +40,7 @@ _Executable implementation tasks for core foundation systems_
   - _Leverage: Godot Resource system for persistence_
   - _Requirements: 3.1, 3.2, 3.3_
 
-- [ ] 5. Implement ProgressData system
+- [x] 5. Implement ProgressData system
   - Create `scripts/data/progress_data.gd` as Resource class
   - Define skill tracking structure (math, reading, writing)
   - Add achievement and milestone tracking
@@ -48,7 +48,7 @@ _Executable implementation tasks for core foundation systems_
   - _Leverage: Godot Resource export system_
   - _Requirements: 4.1, 4.2, 4.3, 4.4_
 
-- [ ] 6. Create GameSettings management
+- [x] 6. Create GameSettings management
   - Create `scripts/data/game_settings.gd` as Resource class
   - Define settings structure with defaults
   - Add settings validation and bounds checking
