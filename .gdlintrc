@@ -1,0 +1,24 @@
+# Best practice settings for Godot projects
+function-arguments-number: 10
+max-file-lines: 1000
+max-line-length: 100
+max-public-methods: 20
+
+# Essential code quality checks
+mixed-tabs-and-spaces: true
+private-method-call: true
+tab-characters: 1
+trailing-whitespace: true
+unnecessary-pass: true
+
+# Naming conventions (following Godot style guide)
+class-name: "([A-Z][a-z0-9]*)+"
+class-variable-name: "_?[a-z][a-z0-9]*(_[a-z0-9]+)*"
+constant-name: "[A-Z][A-Z0-9]*(_[A-Z0-9]+)*"
+function-name: "(_on_([A-Z][a-z0-9]*)+(_[a-z0-9]+)*|_?[a-z][a-z0-9]*(_[a-z0-9]+)*)"
+signal-name: "[a-z][a-z0-9]*(_[a-z0-9]+)*"
+
+# Exclude common directories
+excluded_directories: !!set
+  .git: null
+  .godot: null
