@@ -3,11 +3,13 @@
 Investigate and analyze the root cause of a reported bug.
 
 ## Usage
+
 ```
 /bug-analyze [bug-name]
 ```
 
 ## Phase Overview
+
 **Your Role**: Investigate the bug and identify the root cause
 
 This is Phase 2 of the bug fix workflow. Your goal is to understand why the bug is happening and plan the fix approach.
@@ -19,7 +21,7 @@ You are working on the analysis phase of the bug fix workflow.
 1. **Prerequisites**
    - Ensure report.md exists and is complete
    - Load the bug report for context
-   - **Load steering documents**: 
+   - **Load steering documents**:
      - Check for .claude/steering/tech.md for technical patterns
      - Check for .claude/steering/structure.md for project organization
    - Understand the reported issue completely
@@ -50,18 +52,22 @@ You are working on the analysis phase of the bug fix workflow.
    - Provide implementation plan for the fix
 
 ### Analysis Structure
+
 ```markdown
 ## Root Cause Analysis
+
 - Investigation Summary: [What you found]
 - Root Cause: [The underlying issue]
 - Contributing Factors: [Secondary issues]
 
 ## Technical Details
+
 - Affected Code Locations: [Specific files and functions]
 - Data Flow Analysis: [How data moves and where it breaks]
 - Dependencies: [External factors involved]
 
 ## Solution Approach
+
 - Fix Strategy: [How to solve it]
 - Alternative Solutions: [Other options considered]
 - Implementation Plan: [Specific changes needed]
@@ -86,28 +92,33 @@ You are working on the analysis phase of the bug fix workflow.
 ## Analysis Guidelines
 
 ### Code Investigation
+
 - Use search tools to find relevant code
 - Understand existing error handling patterns
 - Look for similar functionality that works correctly
 - Check for recent changes that might have caused the issue
 
 ### Root Cause Identification
+
 - Don't just fix symptoms - find the real cause
 - Consider edge cases and error conditions
 - Look for design issues vs implementation bugs
 - Understand the intended behavior vs actual behavior
 
 ### Solution Design
+
 - Prefer minimal, targeted fixes
 - Reuse existing patterns and utilities
 - Consider backwards compatibility
 - Plan for future prevention of similar bugs
 
 ## Critical Rules
+
 - **NEVER** proceed to the next phase without explicit user approval
 - Accept only clear affirmative responses: "yes", "approved", "looks good", etc.
 - If user provides feedback, make revisions and ask for approval again
 - Continue revision cycle until explicit approval is received
 
 ## Next Phase
+
 After approval, proceed to `/bug-fix`.

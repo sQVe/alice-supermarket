@@ -3,22 +3,25 @@
 Generate design document based on approved requirements.
 
 ## Usage
+
 ```
 /spec-design [feature-name]
 ```
 
 ## Phase Overview
+
 **Your Role**: Create technical architecture and design
 
 This is Phase 2 of the spec workflow. Your goal is to create a comprehensive technical design that translates requirements into a concrete implementation plan.
 
 ## Instructions
+
 You are working on the design phase of the spec workflow.
 
 1. **Prerequisites**
    - Ensure requirements.md exists and is approved
    - Load the requirements document for context
-   - **Load steering documents**: 
+   - **Load steering documents**:
      - Check for .claude/steering/tech.md for technical standards
      - Check for .claude/steering/structure.md for project conventions
      - Check for .claude/steering/product.md for product context
@@ -68,6 +71,7 @@ You are working on the design phase of the spec workflow.
    - **CRITICAL**: Do not proceed without explicit approval
 
 ## Design Sections Required
+
 - Overview
 - Architecture (with Mermaid diagrams)
 - Components and Interfaces
@@ -76,24 +80,30 @@ You are working on the design phase of the spec workflow.
 - Testing Strategy
 
 ## Design Structure
-```markdown
+
+````markdown
 # Design Document
 
 ## Overview
+
 [High-level description of the feature and its place in the overall system]
 
 ## Steering Document Alignment
 
 ### Technical Standards (tech.md)
+
 [How the design follows documented technical patterns and standards]
 
 ### Project Structure (structure.md)
+
 [How the implementation will follow project organization conventions]
 
 ## Code Reuse Analysis
+
 [What existing code will be leveraged, extended, or integrated]
 
 ## Architecture
+
 [Describe the overall architecture and design patterns used]
 
 ```mermaid
@@ -101,29 +111,36 @@ graph TD
     A[Component A] --> B[Component B]
     B --> C[Component C]
 ```
+````
 
 ## Components and Interfaces
 
 ### Component 1
+
 - **Purpose:** [What this component does]
 - **Interfaces:** [Public methods/APIs]
 - **Dependencies:** [What it depends on]
 - **Reuses:** [Existing components/utilities it builds upon]
 
 ### Component 2
+
 - **Purpose:** [What this component does]
 - **Interfaces:** [Public methods/APIs]
 - **Dependencies:** [What it depends on]
 - **Reuses:** [Existing components/utilities it builds upon]
 
 ## Data Models
+
 [Data structures following established patterns]
 
 ## Error Handling
+
 [Error scenarios consistent with current approach]
 
 ## Testing Strategy
+
 [Testing approach using existing utilities and patterns]
+
 ```
 
 ## Critical Rules
@@ -134,3 +151,4 @@ graph TD
 
 ## Next Phase
 After approval, proceed to `/spec-tasks`.
+```

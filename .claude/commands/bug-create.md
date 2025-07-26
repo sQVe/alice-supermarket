@@ -3,6 +3,7 @@
 Initialize a new bug fix workflow for tracking and resolving bugs.
 
 ## Usage
+
 ```
 /bug-create <bug-name> [description]
 ```
@@ -12,6 +13,7 @@ Initialize a new bug fix workflow for tracking and resolving bugs.
 This is the **streamlined bug fix workflow** - a lighter alternative to the full spec workflow for addressing bugs and issues.
 
 ### Bug Fix Phases
+
 1. **Report Phase** (This command) - Document the bug
 2. **Analysis Phase** (`/bug-analyze`) - Investigate root cause
 3. **Fix Phase** (`/bug-fix`) - Implement solution
@@ -45,22 +47,27 @@ You are helping create a new bug fix workflow. This is designed for smaller fixe
      - Initial analysis
 
 ### Bug Report Structure
+
 ```markdown
 ## Bug Summary
+
 [Clear description of the issue]
 
 ## Bug Details
+
 - Expected Behavior: [What should happen]
 - Actual Behavior: [What actually happens]
 - Steps to Reproduce: [Numbered steps]
 - Environment: [Platform, version, config details]
 
 ## Impact Assessment
+
 - Severity: [Critical/High/Medium/Low]
 - Affected Users: [Who is impacted]
 - Affected Features: [What functionality is broken]
 
 ## Initial Analysis
+
 - Suspected Root Cause: [Initial thoughts]
 - Affected Components: [Files/modules that might be involved]
 ```
@@ -93,14 +100,17 @@ You are helping create a new bug fix workflow. This is designed for smaller fixe
 ## Error Handling
 
 If issues arise during the workflow:
+
 - **Bug unclear**: Ask targeted questions to clarify
 - **Too complex**: Suggest breaking into smaller bugs or using spec workflow
 - **Reproduction blocked**: Document blockers and suggest alternatives
 
 ## Example
+
 ```
 /bug-create login-timeout "Users getting logged out too quickly"
 ```
 
 ## Next Steps
+
 After bug report approval, proceed to `/bug-analyze` phase.

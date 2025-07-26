@@ -3,16 +3,19 @@
 Generate implementation task list based on approved design.
 
 ## Usage
+
 ```
 /spec-tasks [feature-name]
 ```
 
 ## Phase Overview
+
 **Your Role**: Break design into executable implementation tasks
 
 This is Phase 3 of the spec workflow. Your goal is to create a detailed task breakdown that will guide the implementation of the feature.
 
 ## Instructions
+
 You are working on the tasks phase of the spec workflow.
 
 **WORKFLOW**: This is the FINAL step before command generation.
@@ -59,6 +62,7 @@ You are working on the tasks phase of the spec workflow.
    - Use test-driven development approach leveraging existing test patterns
 
 ### Task Format
+
 ```markdown
 - [ ] 1. Task description
   - Specific implementation details
@@ -68,6 +72,7 @@ You are working on the tasks phase of the spec workflow.
 ```
 
 ### Excluded Task Types
+
 - User acceptance testing
 - Production deployment
 - Performance metrics gathering
@@ -84,12 +89,14 @@ You are working on the tasks phase of the spec workflow.
 6. **Critical Task Command Generation Rules**
 
 **Use NPX Command for Task Generation**: Task commands are now generated using the package's CLI command.
+
 - **COMMAND**: `npx @pimzino/claude-code-spec-workflow@latest generate-task-commands {spec-name}`
 - **TIMING**: Only run after tasks.md is approved AND user confirms they want task commands
 - **USER CHOICE**: Always ask the user if they want task commands generated (yes/no)
 - **CROSS-PLATFORM**: Works automatically on Windows, macOS, and Linux
 
 ### Generate Task Commands (ONLY after tasks approval)
+
 - **WAIT**: Do not run command generation until user explicitly approves tasks
 - **ASK USER**: "Would you like me to generate individual task commands for easier execution? (yes/no)"
 - **IF YES**: Execute `npx @pimzino/claude-code-spec-workflow@latest generate-task-commands {feature-name}`
@@ -100,13 +107,16 @@ You are working on the tasks phase of the spec workflow.
 - **RESTART REQUIRED**: Inform user to restart Claude Code for new commands to be visible
 
 ## Task Structure Example
+
 ```markdown
 # Implementation Plan
 
 ## Task Overview
+
 [Brief description of the implementation approach]
 
 ## Steering Document Compliance
+
 [How tasks follow structure.md conventions and tech.md patterns]
 
 ## Tasks
@@ -134,13 +144,16 @@ You are working on the tasks phase of the spec workflow.
 ```
 
 ## Critical Rules
+
 - **NEVER** proceed to the next phase without explicit user approval
 - Accept only clear affirmative responses: "yes", "approved", "looks good", etc.
 - If user provides feedback, make revisions and ask for approval again
 - Continue revision cycle until explicit approval is received
 
 ## Next Phase
+
 After approval and command generation:
+
 1. **RESTART Claude Code** for new commands to be visible
 2. Then you can:
    - Use `/spec-execute` to implement tasks
